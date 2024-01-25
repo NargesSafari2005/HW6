@@ -14,27 +14,27 @@ def gcd(x, y):
     return x
 def lcd(x, y):
     return x * y / gcd(x, y)
-I = input()
-if I == "sum":
+command = input()
+if (command == "sum"):
     nums = inputs()
     print(sum(nums))
-elif I == "average":
+elif (command == "average"):
     nums = inputs()
     average = sum(nums) / len(nums)
     print(round(average, 2))
-elif I == "max":
+elif (command == "max"):
     nums = inputs()
     print(max(nums))
-elif I == "min":
+elif (command == "min"):
     nums = inputs()
     print(min(nums))
-elif I == "gcd":
+elif (command == "gcd"):
     nums = inputs()
     a = nums[0]
     for i in range(1, len(nums)):
         a = gcd(a, nums[i])
     print(a)
-elif I == "lcd":
+elif (command == "lcd"):
     nums = inputs()
     a = nums[0]
     for i in range(1, len(nums)):

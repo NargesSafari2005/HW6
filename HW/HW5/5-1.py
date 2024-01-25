@@ -15,7 +15,6 @@ class MrCrab:
 class SpongeBob(MrCrab):
     def __init__(self, dna):
         super().__init__(dna)
-
     def display(self):
         list_of_length = list(map(int, str(len(self.dna))))
         list_of_length = self.merge_sort(list_of_length)

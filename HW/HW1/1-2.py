@@ -2,7 +2,7 @@ a = int(input())
 b = int(input())
 sum_of_a_b = int(input())
 while a:
-    x = (a & b) << 1
+    x = (a & b)<< 1
     y = a ^ b
     a = x
     b = y

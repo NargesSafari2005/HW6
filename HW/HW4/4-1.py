@@ -1,5 +1,4 @@
 import numpy as np
-
 def read_matrices(filename):
     with open(filename, 'r') as file:
         n, m = map(int, file.readline().split())

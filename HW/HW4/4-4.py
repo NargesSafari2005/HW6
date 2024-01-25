@@ -2,7 +2,6 @@ class DAS:
     def __init__(self):
         self.Patients = {}
         self.Schedule = {}
-
     def executeCommand(self, command):
         tokens = command.split()
         if len(tokens) == 0:

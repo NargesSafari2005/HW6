@@ -1,20 +1,20 @@
 import re
 
-k = input()
-k = re.sub(r' +', ' ', k.strip())
-k = re.sub(r"\\n", "\n", k)
-l = list(k)
-i = []
+input = input()
+input = re.sub(r' +', ' ', input.strip())
+input = re.sub(r"\\n", "\n", input)
+list = list(input)
+arr = []
 F = 0
-for  j in l:
+for  j in list:
     if j == '@':
-        i.append(j)
+        arr.append(j)
         F  += 1
     elif  j == '#' and F > 0:
         F -= 1
     else:
-        i.append(j)
-R = ''
-for j in i:
-    R += j
-print("Formatted Text: " , R)
+        arr.append(j)
+output = ''
+for j in arr:
+    output += j
+print("Formatted Text: " , output)
